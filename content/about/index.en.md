@@ -31,7 +31,7 @@ math:
 - Robustness of NLP systems
 
 ## Education
-- Nanyang Technological University, 2019-2023 (expected)
+- Nanyang Technological University, 2019-2023
 	- Ph.D. in Computer Science
 - Yonsei University, 2016-2018
 	- M.S. in Electrical & Electronic Engineering

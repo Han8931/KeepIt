@@ -6,7 +6,7 @@ draft: false
 author: Han
 description: Guide to keep sensitive data in Python
 tags: ["Python", "dotenv"]
-categories: ["Tutorial"]
+categories: ["Python"]
 ---
 
 # How to keep config file?
