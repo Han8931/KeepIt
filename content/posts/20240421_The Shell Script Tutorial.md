@@ -9,7 +9,6 @@ tags: ["Python", "bash", "shell script", "linux"]
 categories: ["Programming"]
 ---
 
-- [Reference](https://www.shellscript.sh/first.html)
 
 Let's create our first shell script
 ```sh
@@ -25,7 +24,7 @@ echo Hello World        # This is a comment, too!
 - Note that `echo` will automatically put a single space between its parameters.
 - To make it executable, run `chmod +rx <filename>`
 
-# Variables
+## Variables
 
 Let's look back at our first Hello World example. This could be done using variables. Note that _there must be no spaces around the "`=`" sign_: `VAR=value` works; `VAR = value` doesn't work. In the first case, the shell sees the "`=`" symbol and treats the command as a variable assignment. In the second case, the shell assumes that VAR must be the name of a command and tries to execute it.  
 
@@ -47,7 +46,7 @@ read MY_NAME
 echo "Hello $MY_NAME - hope you're well."
 ```
 
-# Escape Characters
+## Escape Characters
 Certain characters are significant to the shell; for example, that the use of double quotes (`"`) characters affect how spaces and TAB characters are treated, for example:
 ```
 $ echo Hello       World
@@ -71,9 +70,9 @@ So the output would be
 `Hello    World`
 Note that we lose the quotes entirely. This is because the first and second quotes mark off the Hello and following spaces; the second argument is an unquoted "World" and the third argument is the empty string; "".
 
-# Loop
+## Loop
 
-## For Loop
+### For Loop
 
 ```sh
 #!/bin/sh
@@ -104,7 +103,7 @@ Looping ... i is set to goodbye
 
 This is well worth trying. Make sure that you understand what is happening here. Try it without the `*` and grasp the idea, then re-read the [Wildcards](https://www.shellscript.sh/wildcards.html) section and try it again with the `*` in place. Try it also in different directories, and with the `*` surrounded by double quotes, and try it preceded by a backslash (`\*`)
 
-## While Loop
+### While Loop
 
 
 ```sh
@@ -174,7 +173,7 @@ drwxr-xr-x    2 root     root         4096 Dec 28 00:44 usr/local/sbin
 drwxr-xr-x    2 root     root         8192 Dec 27 02:10 usr/sbin
 ```
 
-# Test
+## Test
 
 Test is used by virtually every shell script written. It may not seem that way, because `test` is not often called directly. `test` is more frequently called as `[`. `[` is a symbolic link to `test`, just to make shell programs more readable. It is also normally a shell builtin (which means that the shell itself will interpret `[` as meaning `test`, even if your Unix environment is set up differently):
 
@@ -230,7 +229,7 @@ fi
 This will `echo "Something"` if the `[ something ]` test succeeds, otherwise it will test `[ something_else ]`, and `echo "Something else"` if that succeeds. If all else fails, it will `echo "None of the above"`.
 
 
-# Case
+## Case
 
 The `case` statsement saves going through a whole set of `if ... then ... else` statements. Its syntax is really simple:
 
@@ -257,7 +256,7 @@ done
 ```
 
 
-# Variables 2
+## Variables 2
 
 The first set of variables we will look at are `$0 ... $9` and `$#`. The variable `$0` is the basename of the program as it was called. `$1...$9` are the first 9 additional parameters the script was called with. The variable `$@` is all parameters. The variable `$*` is similar, but does not preserve any whitespace and quoting, so "File with spaces" becomes "File", "with", and "spaces". `$#` is the number of parameters the script was called with. 
 
@@ -286,7 +285,7 @@ echo "x is $x y is $y z is $z"
 ```
 
 
-# Functions
+## Functions
 
 ```sh
 #!/bin/sh
@@ -301,3 +300,7 @@ echo passwd $USER $PASSWORD
 }
 
 ```
+
+## Reference
+
+- [shellscript](https://www.shellscript.sh/first.html)
