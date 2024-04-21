@@ -3,7 +3,6 @@ title: "About Han"
 date: 2024-04-21
 draft: false
 description: "About Han"
-images: ["/Apple-Devices-Preview.png"]
 
 lightgallery: true
 
