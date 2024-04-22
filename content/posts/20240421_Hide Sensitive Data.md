@@ -11,7 +11,7 @@ categories: ["Python"]
 
 # How to keep config file?
 
-An app's _config_ is everything that is likely to vary between [deploys](https://12factor.net/codebase) (staging, production, developer environments, etc). This includes:
+An app's *config* is everything that is likely to vary between [deploys](https://12factor.net/codebase) (staging, production, developer environments, etc). This includes:
 - Resource handles to the database, Memcached, and other [backing services](https://12factor.net/backing-services)
 - Credentials to external services such as Amazon S3 or Twitter
 - Per-deploy values such as the canonical hostname for the deploy
