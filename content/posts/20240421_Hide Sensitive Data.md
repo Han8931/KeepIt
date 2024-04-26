@@ -73,3 +73,6 @@ load_dotenv()
 API_KEY = os.getenv("API_KEY") or ""
 ```
 
+## Reference
+- [The Twelve Factor App](https://12factor.net/config)
+
