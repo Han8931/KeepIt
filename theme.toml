@@ -23,6 +23,8 @@ features = [
   "social-menu",
   "syntax-highlighting",
   "SEO Optimized"
+  "katex",
+  "math",
 ]
 
 min_version = "0.62.0"
